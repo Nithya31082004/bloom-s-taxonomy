@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Begin</title>
+    <link rel="stylesheet" href="generate.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>LET'S BEGIN!</h1>
+        </header>
+
+        <main>
+            <div class="form-container">
+                <label for="keyword">Enter a keyword:</label>
+                <input type="text" id="keyword" placeholder="Enter C language keyword">
+
+                <label for="taxonomy-type">Select the type in which you want to generate question:</label>
+                <select id="taxonomy-type">
+                    <option value="">Select type</option>
+                    <option value="creating">Creating</option>
+                    <option value="evaluating">Evaluating</option>
+                    <option value="analyzing">Analyzing</option>
+                    <option value="applying">Applying</option>
+                    <option value="understanding">Understanding</option>
+                    <option value="remembering">Remembering</option>
+                </select>
+
+                <button id="generate-btn">GENERATE</button>
+            </div>
+
+            <div class="buttons-container">
+                <button class="secondary-btn"onclick="location.href='history.html'">Search History</button>
+                <button class="secondary-btn">Log Out</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="generate.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Question</title>
+    <link rel="stylesheet" href="create.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="hamburger-menu">&#9776;</div>
+        </nav>
+        <div class="form-container">
+            <h1>CREATE</h1>
+            <h2>Add new questions</h2>
+            <form id="questionForm">
+                <label for="question">Question:</label>
+                <input type="text" id="question" name="question" required>
+
+                <label for="taxonomy">Bloom’s taxonomy type:</label>
+                <select id="taxonomy" name="taxonomy" required>
+                    <option value="">Select</option>
+                    <option value="Remember">Remember</option>
+                    <option value="Understand">Understand</option>
+                    <option value="Apply">Apply</option>
+                    <option value="Analyze">Analyze</option>
+                    <option value="Evaluate">Evaluate</option>
+                    <option value="Create">Create</option>
+                </select>
+
+                <label for="topic">C Language Topic:</label>
+                <select id="topic" name="topic" required>
+                    <option value="">Select</option>
+                    <option value="Variables">Variables</option>
+                    <option value="Loops">Loops</option>
+                    <option value="Functions">Functions</option>
+                    <option value="Pointers">Pointers</option>
+                    <option value="Structures">Structures</option>
+                </select>
+
+                <button type="submit">ADD</button>
+            </form>
+            <div class="buttons">
+                <button onclick="location.href='allQuestions.html'">All Questions</button>
+                <button onclick="logOut()">Log Out</button>
+            </div>
+        </div>
+    </div>
+    <script src="create.js"></script>
+</body>
+</html>
